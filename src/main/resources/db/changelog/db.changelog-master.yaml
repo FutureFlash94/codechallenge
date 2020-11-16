@@ -1,0 +1,19 @@
+
+databaseChangeLog:
+  - changeSet:
+      id: 2020-08-27--1
+      author: pmig
+      changes:
+        - createTable:
+            tableName: data
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: content
+                  type: text
